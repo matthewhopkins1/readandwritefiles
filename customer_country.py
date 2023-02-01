@@ -1,0 +1,11 @@
+import csv
+customers = open('customers.csv', 'r')
+customer_file = csv.reader(customers, delimiter=',')
+next(customer_file)
+print(record)
+print('first name:',record[3])
+print('last name:',record[2])
+print('City:',record[3])
+print('Country:',record[4])
+print('Phone:',record[5])
+input()
